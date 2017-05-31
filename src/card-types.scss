@@ -1,0 +1,26 @@
+$cardTypes: amex, mastercard, discover, visa;
+
+$amex-background-color: #108168;
+
+$discover-background-color: #86B8CF;
+
+$mastercard-background-color: linear-gradient(to right, #2fa7ff, #0061A8);
+$mastercard-width: 50px;
+
+$visa-background-color: linear-gradient(to right, #2653d0, #191278);
+$visa-width: 70px;
+
+@each $cardType in $cardTypes {
+  .react-credit-card--#{$cardType} .react-credit-card__front,
+  .react-credit-card--#{$cardType} .react-credit-card__back {
+    @if $cardType == amex { background: $amex-background-color }
+    @if $cardType == mastercard { background: $mastercard-background-color }
+    @if $cardType == visa { background: $visa-background-color; }
+    @if $cardType == discover { background: $discover-background-color }
+  }
+
+  .react-credit-card__logo.react-credit-card--#{$cardType} {
+    @if $cardType == visa { width: $visa-width; }
+    @if $cardType == mastercard { width: $mastercard-width; }
+  }
+};

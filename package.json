@@ -4,8 +4,8 @@
   "description": "An awesome react credit card component.",
   "main": "lib/index.js",
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "build-css": "node-sass-chokidar src/ -o lib/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o lib/ --watch --recursive",
     "test": "xo",
     "build": "rimraf lib && npm run test && npm run build-css && babel -d lib/ src/",
     "watch": "rimraf lib && npm run build-css && babel -d lib/ src/ --watch",
@@ -45,6 +45,9 @@
     ]
   },
   "dependencies": {
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "payment": "^2.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
