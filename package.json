@@ -1,0 +1,65 @@
+{
+  "name": "react-creditcard",
+  "version": "1.0.0",
+  "description": "An awesome react credit card component.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "test": "xo",
+    "build": "rimraf lib && npm run test && npm run build-css && babel -d lib/ src/",
+    "watch": "rimraf lib && npm run build-css && babel -d lib/ src/ --watch",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medipass/react-creditcard.git"
+  },
+  "keywords": [
+    "awesome",
+    "react",
+    "credit-card"
+  ],
+  "author": "Jake Moxey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medipass/react-creditcard/issues"
+  },
+  "homepage": "https://github.com/medipass/react-creditcard#readme",
+  "xo": {
+    "extends": "xo-react",
+    "parser": "babel-eslint",
+    "space": true,
+    "rules": {
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "react/react-in-jsx-scope": 0,
+      "react/no-danger": 0,
+      "react/forbid-component-props": 0
+    },
+    "globals": [
+      "window",
+      "navigator"
+    ]
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-config-xo-react": "^0.12.0",
+    "eslint-plugin-react": "^7.0.1",
+    "node-sass-chokidar": "0.0.2",
+    "rimraf": "^2.6.1",
+    "xo": "^0.18.2"
+  }
+}
