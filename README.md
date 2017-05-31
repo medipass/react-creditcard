@@ -2,6 +2,8 @@
 
 > An awesome credit card component (and doesn't even use CoffeeScript!).
 
+![](https://d1zjcuqflbd5k.cloudfront.net/files/acc_545909/QqmwQA?response-content-disposition=inline;%20filename=react-creditcard.gif&Expires=1496222713&Signature=MdqLzHveZ2spLoBkpH~eGIbvqZoHczDjE8t1c36bs2eg9HHrg1JCmeGZl83Ei~Th591xRI-fXj4jWt3ZvvFUYKjhD~1GnVr9wc2qjCNaNJM2QElZsuvcZhFKpyPzT0iZqynfWT5slka0Mb7Ow~~kuxTTgkRWtwPp~Px7sLGOyyc_&Key-Pair-Id=APKAJTEIOJM3LSMN33SA)
+
 ## Motivation
 
 Most of the card modules I've seen use CoffeeScript (and tbh I can't be bothered learning CoffeeScript to make a pull request), and some of them are not being actively maintained anymore.
