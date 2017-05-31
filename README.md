@@ -2,7 +2,7 @@
 
 > An awesome credit card component (and doesn't even use CoffeeScript!).
 
-![](http://imgur.com/vZEieRx)
+![](http://i.imgur.com/vZEieRx.gif)
 
 ## Motivation
 
