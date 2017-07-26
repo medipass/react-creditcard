@@ -98,7 +98,7 @@ export class Card extends Component {
 
     if (type) {
       if (type === 'amex') {
-        this.setState({ length: 15 });
+        return this.setState({ type, length: 15 });
       }
       return this.setState({ type, length: 16 });
     }
