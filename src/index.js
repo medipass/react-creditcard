@@ -31,7 +31,13 @@ export class Card extends Component {
     return classNames.join(' ');
   }
 
-  formatCVC = cvc => padEnd(cvc, 3, '•')
+  formatCVC = cvc => {
+    const { type } = this.state;
+    if (type === 'amex') {
+      return padEnd(cvc, 4, '•');
+    }
+    return padEnd(cvc, 3, '•');
+  }
 
   formatExpiry = expiry => {
     let formattedExpiry = expiry;
